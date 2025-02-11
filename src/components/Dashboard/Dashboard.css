@@ -39,7 +39,7 @@
 
 .platform-wrapper {
   margin-bottom: 40px;
-  height: 280px;
+  height: 350px; /* 260 */
   border: 1px solid black;
   display: grid;
   grid-template-columns: 940px 260px;
