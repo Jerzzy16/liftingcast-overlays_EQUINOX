@@ -1,13 +1,13 @@
-import classNames from "classnames";
-import React from "react";
+import "./Dashboard.css";
 import { useMeetData } from "../../lib/useMeetData";
 import { CurrentLifterBanner } from "../CurrentLifterBanner/CurrentLifterBanner";
-import { Standings } from "../Standings/Standings";
 import { UpcomingLifters } from "../UpcomingLifters/UpcomingLifters";
-import "./Dashboard.css";
-// import { Clock } from "../Clock/Clock"; 
+import { Standings } from "../Standings/Standings";
+import React from "react";
+import classNames from "classnames";
+// import { Clock } from "../Clock/Clock"; ; moved to banner
 import { round } from "lodash";
-// import { Flag } from "../Flag/Flag";
+// import { Flag } from "../Flag/Flag"; moved to banner
 // import { PlaceChange } from "../PlaceChange/PlaceChange";
 
 // will not be used
@@ -86,7 +86,7 @@ export const Dashboard = ({
                         platformId={platform.id}
                         latency={latency}
                       /> */}
-                      {/* <Flag data={data} platformId={platform.id} /> moved to banner */}
+                      {/* <Flag data={data} platformId={platform.id} /> moved to banner*/}
                       {/* <PlaceChange data={data} platformId={platform.id} /> */}
 
                       {/* will not be used */}

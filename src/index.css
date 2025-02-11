@@ -16,8 +16,13 @@
 }
 
 @font-face {
-  font-family: "ProximaNovaCondensed";
+  font-family: "ProximaNovaCondensedSemi";
   src: url("/fonts/Proxima Nova/Proxima Nova ScOsf Condensed Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ProximaNovaCondensedBold";
+  src: url("/fonts/Proxima Nova/Proxima Nova ScOsf Condensed Bold.otf") format("opentype");
 }
 
 :root {

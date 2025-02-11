@@ -93,7 +93,7 @@ export const CurrentLifterBanner = ({
 
   return (
     <>
-      {/* Top Dashboard - Only Name, Team, and Category */}
+      {/* Top Dashboard */}
       <div className="banner-container">
 
         <div className="top-lifter-banner"> {/* flag+lifter info */}
@@ -116,45 +116,45 @@ export const CurrentLifterBanner = ({
             )}
         </div>
 
-        <div className="info-row">
-          <span className="info-label">PLACE | </span>
-          <PlaceChange data={data} platformId={platform.id} />
-        </div>
-
       </div>
   
 
-      {/* Bottom Dashboard - Without Name/Category */}
-
+      {/* Bottom Dashboard */}
       <div className="bottom-banner-row">
 
         <div className="logo">
           <img src={logo} className="logo" alt="logo" />
         </div>
 
-        <div className="banner-container">
-          <div className="current-lifter-banner">
-            <div className="current-lifter-banner-column-two"> 
-              <div className="current-lifter-banner-attempts">
-                <Attempts currentAttempt={currentAttempt} lifter={currentLifter} />
-              </div>
-              <div className="top-lifter-banner-column">
-                <div className="current-lifter-banner-column-three">
-                  <div className="top-lifter-banner-clock">
-                    <Clock data={data} platformId={platform.id} latency={latency} />
-                  </div>
-                </div>
-                <div className="current-lifter-banner-lift-name">
-                  {currentAttempt?.liftName}
-                </div>
-              </div>
+        <div className="current-lifter-banner">
+          <div className="current-lifter-banner-attempts">
+            <Attempts currentAttempt={currentAttempt} lifter={currentLifter} />
+          </div>
+          <div className="timer-lift-column"> {/* to combine both into a column */}
+            <Clock data={data} platformId={platform.id} latency={latency} />
+            <div className="current-lifter-banner-lift-name">
+              {currentAttempt?.liftName === "dead" ? "deadlift" : currentAttempt?.liftName}
             </div>
           </div>
         </div>
 
         <Lights refLights={platform.refLights} />
 
+      </div>
+
+      {/* Rank Dashboard */}
+      <div className="new-banner-container">
+
+        <div className="rank">
+          <div className="info-row">
+            <span className="info-label">Rank:</span>
+              <div className="data-label">
+                <PlaceChange data={data} platformId={platform.id} />
+              </div>
+          </div>
         </div>
+
+      </div>
     </>
   );
 };
