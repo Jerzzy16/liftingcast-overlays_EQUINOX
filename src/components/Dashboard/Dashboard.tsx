@@ -1,15 +1,14 @@
+import classNames from "classnames";
+import React from "react";
 import { useMeetData } from "../../lib/useMeetData";
 import { CurrentLifterBanner } from "../CurrentLifterBanner/CurrentLifterBanner";
+import { Standings } from "../Standings/Standings";
 import { UpcomingLifters } from "../UpcomingLifters/UpcomingLifters";
 import "./Dashboard.css";
-// import { Clock } from "../Clock/Clock"; 
+// import { Clock } from "../Clock/Clock"; ; moved to banner
 import { round } from "lodash";
 // import { Flag } from "../Flag/Flag"; moved to banner
 // import { PlaceChange } from "../PlaceChange/PlaceChange";
-
-// will not be used
-// import { ScoreChange } from "../ScoreChange/ScoreChange";
-// import { RecordAttempt } from "../RecordAttempt/RecordAttempt";
 
 export const Dashboard = ({
   meetId,
