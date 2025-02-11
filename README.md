@@ -25,7 +25,7 @@ Edit graphics as needed.
 
 ## GIT
 ```
-Git clone https://github.com/Jerzzy16/3--liftingcast-overlays-main---Copy
+Git clone https://github.com/Jerzzy16/liftingcast-overlays_EQUINOX
 
 Git pull --if done cloning and wants an updated version
 
