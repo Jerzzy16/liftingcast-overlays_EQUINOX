@@ -1,7 +1,7 @@
-import "./Clock.css";
-import { MeetApiResponse } from "../../types";
-import React from "react";
 import { max } from "lodash";
+import React from "react";
+import { MeetApiResponse } from "../../types";
+import "./Clock.css";
 
 // This clock may not be very accurate depending on network latency.
 // Updates from the websocket are a bit slower than on the main LiftingCast App.
