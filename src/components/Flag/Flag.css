@@ -1,0 +1,19 @@
+.flag {
+  height: 44px; /* 58 */
+  width: 83px; /* 100 */
+
+  padding-left: 10px;
+  flex-shrink: 0;
+  aspect-ratio: 83/44;
+}
+
+.flag .flag-image {
+  position: relative;
+  height: 44px;
+  width: 83px; /* 100 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  margin-top: 3px;
+}

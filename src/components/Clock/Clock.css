@@ -1,0 +1,7 @@
+.clock {
+  font-size: 75px; /* 32 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

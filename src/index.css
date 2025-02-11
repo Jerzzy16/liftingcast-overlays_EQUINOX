@@ -1,0 +1,44 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AldotheApache";
+  src: url("/fonts/AldotheApache.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNovaCondensed";
+  src: url("/fonts/Proxima Nova/Proxima Nova ScOsf Condensed Semibold.otf") format("opentype");
+}
+
+:root {
+  font-family: "AldotheApache";
+  color: black;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+
+  /*
+    background-color should be set to something that is easy to chroma key out.
+    orange works because it doesn't conflict with any of the colors used.
+    current lifter is often represented in blue.
+    red and green are used for bad/good lifts.
+    red, blue, and yellow are used for fault cards.
+   */
+  background-color: green;
+}
+
+body {
+  margin: 0;
+}

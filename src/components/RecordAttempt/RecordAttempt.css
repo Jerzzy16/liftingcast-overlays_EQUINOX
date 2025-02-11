@@ -1,0 +1,19 @@
+.record-attempt {
+  /* height: 58px; */
+  width: 100px; /* 150 */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-size: 15px; /* 24 */
+
+  margin-left: 5px;
+  color: black;
+}
+
+.record-attempt .record-attempt-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
