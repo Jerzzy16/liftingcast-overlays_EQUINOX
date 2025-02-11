@@ -7,7 +7,7 @@ import { UpcomingLifters } from "../UpcomingLifters/UpcomingLifters";
 import "./Dashboard.css";
 // import { Clock } from "../Clock/Clock"; 
 import { round } from "lodash";
-import { Flag } from "../Flag/Flag";
+// import { Flag } from "../Flag/Flag";
 // import { PlaceChange } from "../PlaceChange/PlaceChange";
 
 // will not be used
@@ -86,7 +86,7 @@ export const Dashboard = ({
                         platformId={platform.id}
                         latency={latency}
                       /> */}
-                      <Flag data={data} platformId={platform.id} /> moved to banner
+                      {/* <Flag data={data} platformId={platform.id} /> moved to banner */}
                       {/* <PlaceChange data={data} platformId={platform.id} /> */}
 
                       {/* will not be used */}
