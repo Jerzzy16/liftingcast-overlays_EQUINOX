@@ -1,30 +1,281 @@
-.place-change {
-  /* height: 58px; */
-  width: 100px; /* 150 */
+.banner-container {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  font-size: 40px; /* 24 */
-  margin-left: 5px;
+  align-items: center;
+  width: 130%;
+  gap: 20px;
+  /* background-color: blue; only to check container */
 }
 
-.current-place {
+.top-lifter-banner {
+  height: 67px;
+  width: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  background: rgba(215, 13, 29, 0.80);
   color: white;
+  text-transform: uppercase;
+  border: 1px solid #F6B31C;
+  flex-shrink: 0;
+  margin-left: 197px;
+  margin-bottom: 8px;
 }
 
-.possible-place {
-  color: #FBCD22;
+.top-lifter-banner-column {
+  flex-direction: column;
+  align-items: left;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-left: 25px;
 }
 
-.place-change .place-change-inner {
+.name {
+  color: #FFF;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  line-height: 1; /* Reduces spacing between lines */
+}
+.team {
+  color: #FFF;
+  font-family: "ProximaNovaCondensedSemi";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  line-height: 1; /* Reduces spacing */
+}
+
+.top-lifter-banner-weight {
+  background: rgba(50, 115, 234, 0.80);
+  border: 1px solid #F6B31C;
+  height: 67px;
+  flex-shrink: 0;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.weight {
+  color: #FFF;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
+
+
+.bottom-banner-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: -60px;
+  width: auto;
+}
+
+
+  .logo {
+  height: 189px; /* 230-changed */
+  width: 197px; /* 230-changed */
+  flex-shrink: 0;
+  aspect-ratio: 197/189;
+  }
+  
+
+  .current-lifter-banner {
+  width: 100%;
+  height: 130px;
+  border: 1px solid #F6B31C;
+  background: rgba(0, 0, 0, 0.40);
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Adjust column ratios for attempts and clock/lift */
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  margin-left: -35px;
+}
+
+.current-lifter-banner-attempts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  column-gap: 38px;
+  align-items: center;
+  padding: 0 35px;
+  width: 100%;
+}
+.current-lifter-banner-attempt-current {
+  color: blue;
+}
+.current-lifter-banner-attempt-good {
+  color: green;
+}
+.current-lifter-banner-attempt-bad {
+  color: red;
+}
+
+.current-lifter-banner-attempt {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 64px;
+  position: relative;
 }
 
-.place-change .place-change-inner .icon {
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 30px; /* 20 */
-  height: 30px; /* 20 */
+.current-lifter-banner-attempt::after {
+  content: "";
+  position: absolute;
+  right: -19px; 
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #F6B31C; 
+}
+
+.timer-lift-column {
+  width: 254px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: -12px;
+}
+
+.current-lifter-banner-lift-name {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "ProximaNovaCondensedBold";
+  font-size: 43px;
+  color:#FFF;
+}
+
+
+
+
+
+.new-banner-container {
+  display: flex;
+  align-items: center;
+  width: 130%;
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+/* place/rank */
+.rank {
+  margin-left: auto;
+}
+
+.info-row {
+  width: 300px;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid #F6B31C;
+  background: rgba(0, 0, 0, 0.40);
+}
+.info-label {
+  font-size: 40px;
+  color: #FFF;
+  text-transform: uppercase;
+  border: 1px solid #F6B31C;
+  background: rgba(215, 13, 29, 0.80);
+  height: 67px;
+  flex-shrink: 0;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: flex;
+}
+.data-label {
+  padding-left: 10px;
+  font-size: 40px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+
+
+
+
+.current-lifter-banner-lights {
+  width: 175px;
+  height: 77px;
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #F6B31C;
+  background: rgba(0, 26, 0, 0.40);
+  margin-bottom: 28px;
+  margin-left: 38px;
+}
+
+/* Hide the lights box when no active lights */
+.current-lifter-banner-lights:empty {
+  display: none; /* Completely remove from layout */
+}
+
+/* cirle lights */
+.current-lifter-banner-light {
+  width: 44.872px;
+  height: 40.224px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #F6B31C;
+  background: rgba(0, 26, 0, 0.40);
+  visibility: hidden; /* Hide by default */
+}
+.current-lifter-banner-light-red {
+  background-color: red;
+}
+.current-lifter-banner-light-white {
+  background-color: white;
+}
+
+/* Show only when colored */
+.current-lifter-banner-light-red,
+.current-lifter-banner-light-white {
+  visibility: visible;
+}
+
+.card-slits {
+  display: flex;
+  margin-top: 42px;
+  justify-content: center;
+  border: 1px solid #F6B31C;
+}
+
+.card-indicator {
+  width: 15px;       
+  height: 6px;      
+  border-radius: 1px;
+}
+
+.red-card {
+  background-color: red;
+}
+
+.blue-card {
+  background-color: blue;
+}
+
+.yellow-card {
+  background-color: yellow;
 }
