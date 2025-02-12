@@ -254,3 +254,28 @@
 .current-lifter-banner-light-white {
   visibility: visible;
 }
+
+.card-slits {
+  display: flex;
+  margin-top: 42px;
+  justify-content: center;
+  border: 1px solid #F6B31C;
+}
+
+.card-indicator {
+  width: 15px;       
+  height: 5px;      
+  border-radius: 1px;
+}
+
+.red-card {
+  background-color: red;
+}
+
+.blue-card {
+  background-color: blue;
+}
+
+.yellow-card {
+  background-color: yellow;
+}
