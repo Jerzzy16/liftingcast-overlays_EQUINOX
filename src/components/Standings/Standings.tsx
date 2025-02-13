@@ -2,6 +2,7 @@ import { first, last, round, sortBy, take } from "lodash";
 import { LifterAttempts, MeetApiResponse } from "../../types";
 import "./Standings.css";
 import React from "react";
+import logo from "/logo.svg";
 
 // @ts-expect-error types are not working for react-fitty
 import { ReactFitty } from "react-fitty";
@@ -60,6 +61,8 @@ export const Standings = ({ data }: { data: MeetApiResponse }) => {
 
   return (
     <div className="standings">
+
+
       <div className="standings-config-bar">
         <div>
           <div>Division</div>
@@ -109,14 +112,31 @@ export const Standings = ({ data }: { data: MeetApiResponse }) => {
           </select>
         </div>
       </div>
-      <div className="standings-category-name">
+
+
+      {/* <div className="standings-category-name">
         {forecasted ? "Forecasted" : ""} {selectedDivision?.name} -{" "}
         {selectedWeightClass?.name}
+      </div> */}
+
+      <div className="standings-header">
+        <img src={logo} className="standings-logo" alt="logo" />
+        <div className="standings-column">
+          <div className="standings-division">{selectedDivision?.name}</div>
+          <div className="standings-status">
+            {forecasted ? "Forecasted" : "Current Standings"}
+          </div>
+        </div>
+        <div className="standings-weight">
+          <span className="weight">{selectedWeightClass?.name} KG</span>
+        </div>
       </div>
+
+
       <div>
-        <div className="standings-row">
-          <div className="standing-item"></div>
-          <div className="standing-item"></div>
+        <div className="sub-row">
+          <div className="standing-item">Place</div>
+          <div className="standing-item">Name</div>
           <div className="standing-item">Squat</div>
           <div className="standing-item">Bench</div>
           <div className="standing-item">Dead</div>
@@ -145,6 +165,8 @@ export const Standings = ({ data }: { data: MeetApiResponse }) => {
           );
         })}
       </div>
+
+
     </div>
   );
 };
