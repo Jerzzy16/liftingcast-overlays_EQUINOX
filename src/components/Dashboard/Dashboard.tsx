@@ -16,29 +16,29 @@ export const Dashboard = ({
   apiKey,
   apiBaseUrl,
 }: {
-  meetId: string
-  password: string
-  apiKey: string
-  apiBaseUrl: string
+  meetId: string;
+  password: string;
+  apiKey: string;
+  apiBaseUrl: string;
 }) => {
-  const [updating, setUpdating] = React.useState(false)
+  const [updating, setUpdating] = React.useState(false);
   const { data, status, error, wait, latency } = useMeetData({
     meetId,
     password,
     apiKey,
     apiBaseUrl,
-  })
+  });
 
   React.useEffect(() => {
-    setUpdating(true)
+    setUpdating(true);
     const timer = setTimeout(() => {
-      setUpdating(false)
-    }, 500)
+      setUpdating(false);
+    }, 500);
 
-    return () => timer && clearTimeout(timer)
-  }, [updating]) // Updated dependency
+    return () => timer && clearTimeout(timer);
+  }, [updating]); // Updated dependency
 
-  const round = (num: number) => Math.round(num * 100) / 100
+  const round = (num: number) => Math.round(num * 100) / 100;
 
   return (
     <>
@@ -47,13 +47,16 @@ export const Dashboard = ({
           <div className="connection-info">
             <div className="connection-info-first-row">
               <div>
-                STATUS: {status} {status === "RECONNECTING" && wait && ` after ${wait / 1000} second wait.`}
+                STATUS: {status}{" "}
+                {status === "RECONNECTING" &&
+                  wait &&
+                  ` after ${wait / 1000} second wait.`}
               </div>
               <div
                 className={classNames(
                   "sync-indicator",
                   status === "CONNECTED" && "sync-indicator-connected",
-                  updating && "sync-indicator-updating",
+                  updating && "sync-indicator-updating"
                 )}
               ></div>
               Latency: {round(latency)}ms
@@ -68,25 +71,30 @@ export const Dashboard = ({
                 <div key={platform.id} className="platform-wrapper">
                   <div className="platform-column-one">
                     <div className="platform-name">{platform.name}</div>
-                    <CurrentLifterBanner data={data} platformId={platform.id} latency={latency} />
-                    <div className="secondary-banner">{/* Secondary banner content */}</div>
+                    <CurrentLifterBanner
+                      data={data}
+                      platformId={platform.id}
+                      latency={latency}
+                    />
+                    <div className="secondary-banner">
+                      {/* Secondary banner content */}
+                    </div>
                   </div>
                   <UpcomingLifters data={data} platformId={platform.id} />
-              </div>
-              )
+                </div>
+              );
             })}
-            <div>
-                    <ImageCarousel />
-                  </div>
         </div>
-
+        <div>
+            <ImageCarousel />
+          </div>
         {data && (
           <div>
             <Standings data={data} />
             <Standings data={data} />
           </div>
         )}
-        </div>
+      </div>
     </>
-  )
-}
+  );
+};
