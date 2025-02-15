@@ -2,9 +2,8 @@
   padding: 20px;
   border: 1px solid #F6B31C;
   background: rgba(0, 0, 0, 0.40);
-  max-width: 100%;
-  width: 100%;
-  height: auto;
+  width: 1200px;  /* 1200 width */
+  height: 1080px; /* 1080 height */
   margin-bottom: 20px;
   box-sizing: border-box;
   overflow: hidden;
@@ -67,7 +66,7 @@
 }
 .weight {
   color: #FFF;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .sub-row {
@@ -87,6 +86,7 @@
   grid-template-columns: minmax(30px, 1fr) minmax(100px, 3fr) repeat(4, minmax(50px, 1fr));
   gap: 5px;
   padding-left: 70px;
+  font-size: 30px;
 }
 
 .standings .standings-category-name,
@@ -102,6 +102,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  font-size: 30px;
 }
 
 .standings .standings-row {
@@ -130,24 +131,5 @@
 /* make sure the inline-block div that react-fitty adds is centered vertically */
 .standings .standings-row .standing-item > div > div {
   vertical-align: middle;
-}
-
-/* resolutions */
-@media (max-width: 1920px) {
-  .standings .standings-row {
-    grid-template-columns: minmax(30px, 1fr) minmax(80px, 2fr) repeat(4, minmax(50px, 1fr));
-  }
-}
-
-@media (max-width: 1200px) {
-  .standings .standings-row {
-    grid-template-columns: 1fr 2fr;
-    flex-wrap: wrap;
-  }
-
-  .standings .standing-item {
-    width: 100%;
-    text-align: center;
-  }
 }
 
