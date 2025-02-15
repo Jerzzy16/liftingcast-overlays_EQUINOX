@@ -10,6 +10,7 @@ import "./Dashboard.css";
 // import { PlaceChange } from "../PlaceChange/PlaceChange";
 import { Forecasted } from "../Forecasted/Forecasted";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import { Standing } from "../Standing/Standing";
 
 export const Dashboard = ({
   meetId,
@@ -92,7 +93,7 @@ export const Dashboard = ({
         {data && (
           <div>
             <Standings data={data} />
-            <Standings data={data} />
+            <Standing data={data} />
           </div>
         )}
         {data && (
