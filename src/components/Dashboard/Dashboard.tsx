@@ -3,11 +3,12 @@ import React from "react";
 import { useMeetData } from "../../lib/useMeetData";
 import { CurrentLifterBanner } from "../CurrentLifterBanner/CurrentLifterBanner";
 import { Standings } from "../Standings/Standings";
-import { UpcomingLifters } from "../UpcomingLifters/UpcomingLifters";
+// import { UpcomingLifters } from "../UpcomingLifters/UpcomingLifters";
 import "./Dashboard.css";
 // import { Clock } from "../Clock/Clock"; ; moved to banner
 // import { Flag } from "../Flag/Flag"; moved to banner
 // import { PlaceChange } from "../PlaceChange/PlaceChange";
+import { Forecasted } from "../Forecasted/Forecasted";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
 
 export const Dashboard = ({
@@ -42,6 +43,7 @@ export const Dashboard = ({
 
   return (
     <>
+    
       <div className="dashboard">
         <div>
           <div className="connection-info">
@@ -80,7 +82,6 @@ export const Dashboard = ({
                       {/* Secondary banner content */}
                     </div>
                   </div>
-                  <UpcomingLifters data={data} platformId={platform.id} />
                 </div>
               );
             })}
@@ -94,7 +95,13 @@ export const Dashboard = ({
             <Standings data={data} />
           </div>
         )}
+        {data && (
+          <div>
+            <Forecasted data={data} />
+          </div>
+        )}
       </div>
+      
     </>
   );
 };
