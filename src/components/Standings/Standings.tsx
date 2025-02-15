@@ -240,7 +240,7 @@ const getBestLift = ({
 
 const AutoSize = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ReactFitty minSize={9} maxSize={17} wrapText={false}>
+    <ReactFitty minSize={10} maxSize={18} wrapText={false}>
       {children}
     </ReactFitty>
   );
