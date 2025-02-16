@@ -146,15 +146,9 @@ export const Ipf = ({ data }: { data: MeetApiResponse }) => {
           const place = forecasted
             ? l.selectedDivision?.forecastedPlace
             : l.selectedDivision?.place;
-                                                    //  ipf coding
             const score = forecasted
-            ? selectedDivision?.scoreBy === "IPF_POINTS"
-              ? l.selectedDivision?.forecastedIpfPoints
-              : l.selectedDivision?.forecastedTotal
-            : selectedDivision?.scoreBy === "IPF_POINTS"
-              ? l.selectedDivision?.ipfPoints
-              : l.selectedDivision?.total;
-        
+            ? l.selectedDivision?.forecastedScore
+            : l.selectedDivision?.score;
           return (
             <div key={l.id} className="ipf-row">
               <div className="ipf-item">{place || "-"}</div>
@@ -247,7 +241,7 @@ const getBestLift = ({
 
 const AutoSize = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ReactFitty minSize={10} maxSize={30} wrapText={false}>
+    <ReactFitty minSize={10} maxSize={18} wrapText={false}>
       {children}
     </ReactFitty>
   );

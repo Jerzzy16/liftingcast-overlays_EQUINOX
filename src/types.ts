@@ -48,9 +48,6 @@ export type LifterDivision = {
   forecastedPlace: number | null;
   total: number | null;
   forecastedTotal: number | null;
-
-  ipfPoints: number | null;               // Add ipf
-  forecastedIpfPoints: number | null;     // Add ipf
 };
 
 export type Lifter = {
