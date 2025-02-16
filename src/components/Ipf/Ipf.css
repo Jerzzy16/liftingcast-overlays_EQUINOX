@@ -1,0 +1,135 @@
+.ipf {
+  padding: 20px;
+  border: 1px solid #F6B31C;
+  background: rgba(0, 0, 0, 0.40);
+  width: 1200px;  /* 1200 width */
+  height: 1080px; /* 1080 height */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+.ipf .ipf-config-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.ipf-header {
+  height: 67px;
+  display: flex;
+  align-items: center;
+  background: rgba(215, 13, 29, 0.80);
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid #F6B31C;
+  margin-bottom: 5px;
+}
+
+.ipf-logo {
+  width: 132px;
+  height: 127px;
+  flex-shrink: 0;
+  aspect-ratio: 132/127;
+  margin-top: 60px;
+  margin-left: -42px;
+}
+
+.ipf-column {
+  flex: 1;
+  flex-direction: column;
+  margin-left: -20px;
+}
+.ipf-division {
+  font-size: 40px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.ipf-status {
+  font-size: 30px;
+  font-family: "ProximaNovaCondensedSemi";
+  color: #ffffff;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.ipf-weight {
+  background: rgba(50, 115, 234, 0.80);
+  border: 1px solid #F6B31C;
+  height: 67px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weight {
+  color: #FFF;
+  font-size: 35px;
+}
+
+.ipfsub-row {
+  border: 1px solid #F6B31C;
+  background: linear-gradient(90deg, rgba(215, 13, 29, 0.60) 0%, rgba(246, 179, 28, 0.60) 50%, rgba(50, 115, 234, 0.60) 100%);
+  padding: 8px;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(30px, 1fr) minmax(100px, 3fr) repeat(4, minmax(50px, 1fr));
+  gap: 5px;
+  padding-left: 70px;
+  font-size: 30px;
+}
+
+.ipf .ipf-category-name,
+.ipf .ipf-row {
+  padding: 8px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.40);
+  color: #FBCD22;
+  font-weight: bold;
+  margin-bottom: 8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+
+.ipf .ipf-row {
+  display: grid;
+  grid-template-columns: minmax(30px, 1fr) minmax(100px, 3fr) repeat(4, minmax(50px, 1fr));
+  gap: 5px;
+  padding-left: 85px;
+}
+
+.ipf .ipf-item {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.ipf .ipf-row .ipf-item {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 4px;
+  display: flex;
+  align-items: center;
+}
+
+/* make sure the inline-block div that react-fitty adds is centered vertically */
+.ipf .ipf-row .ipf-item > div > div {
+  vertical-align: middle;
+}
+

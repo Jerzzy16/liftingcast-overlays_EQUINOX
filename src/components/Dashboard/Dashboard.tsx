@@ -11,6 +11,7 @@ import "./Dashboard.css";
 import { Forecasted } from "../Forecasted/Forecasted";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
 import { Standing } from "../Standing/Standing";
+import { Ipf } from "../Ipf/ipf";
 
 export const Dashboard = ({
   meetId,
@@ -94,6 +95,7 @@ export const Dashboard = ({
           <div>
             <Standings data={data} />
             <Standing data={data} />
+            <Ipf data={data} />
           </div>
         )}
         {data && (
