@@ -11,7 +11,7 @@ import { every, first } from "lodash";
 import classNames from "classnames";
 import "./CurrentLifterBanner.css";
 import React from "react";
-import logo from "/logo.svg";
+import logo from "/PHONEBOOK.svg";
 
 //inputed from dashboard
 import { Flag } from "../Flag/Flag"; 
