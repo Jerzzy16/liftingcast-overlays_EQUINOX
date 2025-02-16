@@ -144,6 +144,7 @@ export const Ipf = ({ data }: { data: MeetApiResponse }) => {
             : l.selectedDivision?.score;
           return (
             <div key={l.id} className="ipf-row">
+              
               <div className="ipf-item">{place || "-"}</div>
               <div className="ipf-item">
                 <AutoSize>{l.name}</AutoSize>
@@ -154,6 +155,7 @@ export const Ipf = ({ data }: { data: MeetApiResponse }) => {
               <div className="ipf-item">
                 {score !== null ? round(Number(score), 2) : "-"}
               </div>
+              
             </div>
           );
 

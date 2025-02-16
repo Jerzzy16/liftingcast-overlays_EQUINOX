@@ -2,7 +2,7 @@ import { first, last, round, sortBy, take } from "lodash";
 import React from "react";
 import { LifterAttempts, MeetApiResponse } from "../../types";
 import "./Standing.css";
-import logo from "/logo.svg";
+import logo from "/PHONEBOOK.svg";
 
 // @ts-expect-error types are not working for react-fitty
 import { ReactFitty } from "react-fitty";
