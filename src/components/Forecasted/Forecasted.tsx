@@ -112,8 +112,8 @@ export const Forecasted = ({ data }: { data: MeetApiResponse }) => {
 
       <div>
         <div className="subs-row">
-          <div className="forecasted-item">Place</div>
-          <div className="forecasted-item">Name</div>
+          <div className="forecasted-itemz">{selectedDivision?.name}</div>
+          <div className="forecasted-item"></div>
           <div className="forecasted-item">{scoreBy}</div>
         </div>
         {topLifters.map((l) => {
@@ -211,7 +211,7 @@ const getBestLift = ({
 
 const AutoSize = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ReactFitty minSize={8} maxSize={16} wrapText={false}>
+    <ReactFitty minSize={10} maxSize={18} wrapText={false}>
       {children}
     </ReactFitty>
   );
