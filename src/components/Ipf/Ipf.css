@@ -27,21 +27,23 @@
   text-transform: uppercase;
   border: 1px solid #F6B31C;
   margin-bottom: 5px;
+  margin-left: 85px;
 }
 
 .ipf-logo {
   width: 132px;
-  height: 127px;
+  height: 117px;
   flex-shrink: 0;
   aspect-ratio: 132/127;
-  margin-top: 60px;
-  margin-left: -42px;
+  margin-top: 46px;
+  margin-left: -120px;
+  
 }
 
 .ipf-column {
   flex: 1;
   flex-direction: column;
-  margin-left: -20px;
+  margin-left: 2px;
 }
 .ipf-division {
   font-size: 40px;
@@ -87,6 +89,7 @@
   gap: 5px;
   padding-left: 70px;
   font-size: 30px;
+  margin-left: 85px;
 }
 
 .ipf .ipf-category-name,

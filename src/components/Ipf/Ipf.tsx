@@ -2,7 +2,7 @@ import { first, last, round, sortBy, take } from "lodash";
 import React from "react";
 import { LifterAttempts, MeetApiResponse } from "../../types";
 import "./Ipf.css";
-import logo from "/logo.svg";
+import logo from "/PHONEBOOK.svg";
 
 // @ts-expect-error types are not working for react-fitty
 import { ReactFitty } from "react-fitty";
@@ -44,7 +44,7 @@ export const Ipf = ({ data }: { data: MeetApiResponse }) => {
       ? selectedDivision.weightClasses[selectedWeightClassId]
       : null;
 
-  const [forecasted, setForecasted] = React.useState(false);
+  const [forecasted] = React.useState(false);
 
   // Remove the word Points from scoreBy as it takes up too much space.
   const scoreBy = selectedDivision?.scoreBy
@@ -102,13 +102,6 @@ export const Ipf = ({ data }: { data: MeetApiResponse }) => {
                 </option>
               );
             })}
-          </select>
-        </div>
-        <div>
-          <div>Forecasted</div>
-          <select onChange={(e) => setForecasted(e.target.value === "true")}>
-            <option value="false">false</option>
-            <option value="true">true</option>
           </select>
         </div>
       </div>
