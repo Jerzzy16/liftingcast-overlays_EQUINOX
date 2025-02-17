@@ -41,7 +41,7 @@
     red and green are used for bad/good lifts.
     red, blue, and yellow are used for fault cards.
    */
-  background-color: magenta;
+  background-color: rgb(46, 23, 1);
 }
 
 body {

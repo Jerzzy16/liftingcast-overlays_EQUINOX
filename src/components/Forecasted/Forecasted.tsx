@@ -101,15 +101,6 @@ export const Forecasted = ({ data }: { data: MeetApiResponse }) => {
       </div>
 
 
-      <div className="forecasted-header">
-        <div className="forecasted-column">
-          <div className="forecasted-status">
-            Forcasted
-          </div>
-        </div>
-      </div>
-
-
       <div>
         <div className="subs-row">
           <div className="forecasted-itemz">{selectedDivision?.name}</div>
@@ -135,6 +126,13 @@ export const Forecasted = ({ data }: { data: MeetApiResponse }) => {
             </div>
           );
         })}
+      </div>
+      <div className="forecasted-header">
+        <div className="forecasted-column">
+          <div className="forecasted-status">
+            Forecasted
+          </div>
+        </div>
       </div>
 
 

@@ -1,14 +1,17 @@
 .Forecasted {
+  display: flex;
+  flex-direction: column-reverse; 
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden; 
+  height: 800px;
   padding: 20px;
   border: 1px solid #f6b31c;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 4px;
-  overflow: hidden;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
   margin-bottom: 20px;
-  box-sizing: border-box;
 }
 
 .forecasted-config-bar {
@@ -71,7 +74,7 @@
   padding: 0.75rem 1rem;
   color: #FBCD22;
   background: rgba(0, 0, 0, 0.40);
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .forecasted-itemz {
