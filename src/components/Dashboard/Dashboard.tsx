@@ -10,8 +10,8 @@ import "./Dashboard.css";
 // import { PlaceChange } from "../PlaceChange/PlaceChange";
 import { Forecasted } from "../Forecasted/Forecasted";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import { Ipf } from "../Ipf/Ipf";
 import { Standing } from "../Standing/Standing";
-import { Ipf } from "../Ipf/ipf";
 
 export const Dashboard = ({
   meetId,
@@ -99,7 +99,7 @@ export const Dashboard = ({
           </div>
         )}
         {data && (
-          <div>
+          <div style={{ height: "600px" }}>
             <Forecasted data={data} />
           </div>
         )}
