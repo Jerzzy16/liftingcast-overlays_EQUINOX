@@ -124,7 +124,7 @@ export const Standing = ({ data }: { data: MeetApiResponse }) => {
         <div className="standing-column">
           <div className="standing-division">{selectedDivision?.name}</div>
           <div className="standing-status">
-            {forecasted ? "Forecasted" : "Current standing"}
+            {forecasted ? "Forecasted" : "Current Standing"}
           </div>
         </div>
         <div className="standing-weight">
@@ -240,7 +240,7 @@ const getBestLift = ({
 
 const AutoSize = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ReactFitty minSize={10} maxSize={30} wrapText={false}>
+    <ReactFitty minSize={10} maxSize={20} wrapText={false}>
       {children}
     </ReactFitty>
   );

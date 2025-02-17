@@ -22,7 +22,7 @@
   height: 67px;
   display: flex;
   align-items: center;
-  background: rgba(215, 13, 29, 0.80);
+  background: rgba(215, 13, 29);
   color: white;
   text-transform: uppercase;
   border: 1px solid #F6B31C;
@@ -57,7 +57,7 @@
   margin-bottom: 5px;
 }
 .standings-weight {
-  background: rgba(50, 115, 234, 0.80);
+  background: rgba(50, 115, 234);
   border: 1px solid #F6B31C;
   height: 67px;
   padding: 15px 20px;
@@ -72,7 +72,7 @@
 
 .sub-row {
   border: 1px solid #F6B31C;
-  background: linear-gradient(90deg, rgba(215, 13, 29, 0.60) 0%, rgba(246, 179, 28, 0.60) 50%, rgba(50, 115, 234, 0.60) 100%);
+  background: linear-gradient(90deg, rgba(215, 13, 29) 0%, rgba(246, 179, 28) 50%, rgba(50, 115, 234) 100%);
   padding: 8px;
   overflow: hidden;
   color: white;

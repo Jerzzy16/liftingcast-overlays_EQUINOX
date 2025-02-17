@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between;
   padding-left: 10px;
-  background: rgba(215, 13, 29, 0.80);
+  background: rgba(215, 13, 29);
   color: white;
   text-transform: uppercase;
   border: 1px solid #F6B31C;
@@ -50,7 +50,7 @@
 }
 
 .top-lifter-banner-weight {
-  background: rgba(50, 115, 234, 0.80);
+  background: rgba(50, 115, 234);
   border: 1px solid #F6B31C;
   height: 67px;
   flex-shrink: 0;
@@ -193,7 +193,7 @@
   color: #FFF;
   text-transform: uppercase;
   border: 1px solid #F6B31C;
-  background: rgba(215, 13, 29, 0.80);
+  background: rgba(215, 13, 29);
   height: 67px;
   flex-shrink: 0;
   padding-top: 15px;
