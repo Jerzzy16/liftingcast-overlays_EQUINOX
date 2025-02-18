@@ -3,8 +3,6 @@ import React from "react";
 import { LifterAttempts, MeetApiResponse } from "../../types";
 import "./Forecasted.css";
 
-// @ts-expect-error types are not working for react-fitty
-import { ReactFitty } from "react-fitty";
 
 export const Forecasted = ({ data }: { data: MeetApiResponse }) => {
   const divisionOptions = sortBy(
@@ -59,7 +57,6 @@ export const Forecasted = ({ data }: { data: MeetApiResponse }) => {
 
       <div className="forecasted-config-bar">
         <div>
-          <div>Division</div>
           <select
             onChange={(e) => {
               const newDivisionId = e.target.value;
@@ -87,7 +84,6 @@ export const Forecasted = ({ data }: { data: MeetApiResponse }) => {
           </select>
         </div>
         <div>
-          <div>Weight Class</div>
           <select onChange={(e) => setSelectedWeightClassId(e.target.value)}>
             {weightClassOptions.map((w) => {
               return (
@@ -118,7 +114,7 @@ export const Forecasted = ({ data }: { data: MeetApiResponse }) => {
             <div key={l.id} className="forecasted-row">
               <div className="forecasted-item">{place || "-"}</div>
               <div className="forecasted-item">
-                <AutoSize>{l.name}</AutoSize>
+                {l.name}
               </div>
               <div className="forecasted-item">
                 {score ? round(Number(score), 2) : null}
@@ -207,10 +203,10 @@ const getBestLift = ({
   )?.weight;
 };
 
-const AutoSize = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <ReactFitty minSize={10} maxSize={18} wrapText={false}>
-      {children}
-    </ReactFitty>
-  );
-};
+// const AutoSize = ({ children }: { children: React.ReactNode }) => {
+//   return (
+//     <ReactFitty minSize={10} maxSize={18} wrapText={false}>
+//       {children}
+//     </ReactFitty>
+//   );
+// };
