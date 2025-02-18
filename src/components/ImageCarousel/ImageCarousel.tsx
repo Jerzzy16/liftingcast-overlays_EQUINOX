@@ -8,6 +8,22 @@ const images = [
     "assets/SBD.svg",
     "assets/sm.svg",
     "assets/trcw.svg",
+    "assets/AM2.svg",
+    "assets/AV.svg",
+    "assets/DD.svg",
+    "assets/Gymzilla.svg",
+    "assets/HS.svg",
+    "assets/IPF.svg",
+    "assets/IPF2.svg",
+    "assets/MBC2.svg",
+    "assets/MSport.svg",
+    "assets/Pagcor.svg",
+    "assets/PAP.svg",
+    "assets/parkinn.svg",
+    "assets/PH2.svg",
+    "assets/POC.svg",
+    "assets/PSC.svg",
+    "assets/wheyl.svg",
 ];
 
 const Carousel = () => {
